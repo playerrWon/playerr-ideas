@@ -11,16 +11,15 @@ SMODS.Joker{
             "can't bother to work out text"
         }
     },
-    loc_def = function(self, card)
-        if context.other_card.lucky_trigger and not context.blueprint then
+    calculate = function(self, card, context)
+         if context.other_card.lucky_trigger and not context.blueprint then
             return { Xmult_mod = card.ability.extra.X_mult }
         end
-    end,
-    calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play and (context.other_card:get_id() == 7) then
             return {
                 x_mult = card.ability.extra.X_mult
+            }
         end
     end
-}
+
 }
