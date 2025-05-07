@@ -19,5 +19,4 @@ if context.individual and context.cardarea == G.play then
     return {xmult = card.ability.extra.X_mult}
   end
 end
-
 }
