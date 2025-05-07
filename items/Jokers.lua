@@ -16,6 +16,7 @@ SMODS.Joker{
          if context.other_card.lucky_trigger and not context.blueprint then
             return { Xmult_mod = card.ability.extra.X_mult }
         end
+        end
         if context.individual and context.cardarea == G.play and (context.other_card:get_id() == 7) then
             return {
                 x_mult = card.ability.extra.X_mult
