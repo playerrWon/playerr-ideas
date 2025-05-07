@@ -1,6 +1,6 @@
 SMODS.Joker{ 
 key = "lucky7s"
-pos = {x = 0, y = 0}
+pos = {x = 0, y = 0},
 rarity = 3
 atlas = "PLH"
 config = { extra = {X_mult = 1, mult_mod = 0.1 } },
