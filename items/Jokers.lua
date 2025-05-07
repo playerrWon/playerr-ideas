@@ -11,8 +11,8 @@ SMODS.Joker{
             "can't bother to work out text"
         }
     },
-   if context.individual and context.other_card.lucky_trigger then
-  card.ability.extra.X_mult = card.ability.extra.X_mult * card.ability.extra.mult_mod
+if context.individual and context.other_card.lucky_trigger then
+  card.ability.extra.X_mult = card.ability.extra.X_mult + card.ability.extra.mult_mod
 end
 if context.individual and context.cardarea == G.play then
   if context.other_card.base.nominal == 7 then
