@@ -13,11 +13,15 @@ return {Xmult_mod = card.ability.extra.X_mult}
  return { 
                     x_mult = card.ability.extra.x_mult,
 					colour = G.C.RED,
-					card = card,
+					card = card, 
+			}
                 end
             end,
-        }
-    }
+}
+        
+
+
+
             
 
             
