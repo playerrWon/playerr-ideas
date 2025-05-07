@@ -10,7 +10,7 @@ SMODS.Joker{
         text = {
             "can't bother to work out text"
         }
-    },
+    }
 if context.individual and context.other_card.lucky_trigger then
   card.ability.extra.X_mult = card.ability.extra.X_mult + card.ability.extra.mult_mod
 end
