@@ -2,17 +2,17 @@
 
 -- the SMODS functions such as SMODS.Joker are also case sensitive, so if you use SMODS.joker instead of SMODS.Joker the joker you coded will not appear in the game, the same goes for any other SMODS method
 
-if not ExampleMod then -- this is used to make sure that the mod is not loaded multiple times, and it is used to make sure that the mod is not loaded in a different order than it should be
-    ExampleMod = {}
+if not playerrideas then -- this is used to make sure that the mod is not loaded multiple times, and it is used to make sure that the mod is not loaded in a different order than it should be
+    playerrideas = {}
 end
 
-ExampleMod = {
+playerrideas = {
     show_options_button = true,
 }
 
-ExampleMod = SMODS.current_mod
-ExampleMod_config = ExampleMod.config -- this is the config file that is used to store the mods settings, and it is used to make sure that the mods config is loaded correctly
-ExampleMod.enabled = copy_table(ExampleMod_config) -- this is the current state of the mods settings, and it is used to make sure that the mods config settings are saved
+playerrideas = SMODS.current_mod
+playerrideas_config = playerrideas.config -- this is the config file that is used to store the mods settings, and it is used to make sure that the mods config is loaded correctly
+playerrideas.enabled = copy_table(playerrideas_config) -- this is the current state of the mods settings, and it is used to make sure that the mods config settings are saved
 
 -- to make your config actually register and work you will need to add the lines 3, 4, and 5 to your mod, and you can replace the ExampleMod with your mods name
 
