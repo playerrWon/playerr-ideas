@@ -12,7 +12,7 @@ SMODS.Joker{
         }
     },
     loc_def = function(self, card)
-        if card["lucky_trigger"] then
+        if card.lucky_trigger then
             return { Xmult_mod = card.ability.extra.X_mult }
         end
     end,
@@ -26,9 +26,3 @@ SMODS.Joker{
         end
     end,
 }
-
-
-            
-
-            
-    
