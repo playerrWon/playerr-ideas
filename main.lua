@@ -31,5 +31,5 @@ SMODS.Atlas({
 -- when setting the files path you need to make sure that you are using the correct capitalization, because if you don't, your mod will crash on linux platforms
 assert(SMODS.load_file("Items/Jokers.lua"))()
 assert(SMODS.load_file("Items/Consumables.lua"))() -- this is where you will find how you can make a custom consumable type or just create a consumable of a pre-existing type
-assert(SMODS.load_file("Items/Misc.lua"))()
-assert(SMODS.load_file("Lib/Utility.lua"))() -- this is the file where we add the code to initialize the config menu and other utility functions
+
+ -- this is the file where we add the code to initialize the config menu and other utility functions
