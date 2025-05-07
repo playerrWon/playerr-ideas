@@ -12,6 +12,7 @@ SMODS.Joker{
         }
     },
     calculate = function(self, card, context)
+        if context.individual and context.cardarea == G.play then
          if context.other_card.lucky_trigger and not context.blueprint then
             return { Xmult_mod = card.ability.extra.X_mult }
         end
