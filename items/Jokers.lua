@@ -19,6 +19,5 @@ if context.individual and context.cardarea == G.play then
     if context.other_card.base.nominal == 7 then
         return {xmult = card.ability.extra.X_mult}
     end
-end,
-    }
-
+        end,
+    } 
