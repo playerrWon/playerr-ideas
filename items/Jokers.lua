@@ -9,7 +9,7 @@ if card.lucky-trigger then
 return {Xmult_mod = card.ability.extra.X_mult}
         end,
          calculate = function (self, card, context)
-            if context.individual and context.cardarea == G.play and (context.other_card:get_id() == 12) then
+            if context.individual and context.cardarea == G.play and (context.other_card:get_id() == 7) then
  return { 
                     x_mult = card.ability.extra.x_mult,
 					colour = G.C.RED,
