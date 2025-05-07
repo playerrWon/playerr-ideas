@@ -19,7 +19,7 @@ SMODS.Joker{
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play and (context.other_card:get_id() == 7) then
             return {
-                x_mult = card.ability.extra.X_mult,
+                x_mult = card.ability.extra.X_mult
         end
     end
 }
