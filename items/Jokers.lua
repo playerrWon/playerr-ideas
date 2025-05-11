@@ -8,9 +8,9 @@ SMODS.Joker {
     loc_txt = {
         name = "Payout",
         text = {
-            "{C:attention} 7s {} give {C:Mult}x# Mult {} when scored"
-            "Increases by {C:Mult}x0.1 {} when {C:attention}Lucky Card {} activates
-        } 
+  "{C:attention}7s{} give {C:white,X:mult}X#1#{} Mult when scored",
+  "Increases by {C:white,X:mult}X#2#{} when a {C:attention}Lucky{} card activates",
+}
     },
     loc_vars = function (self, info_queue, center)
         return { vars = { center.ability.extra.X_mult, center.ability.extra.mult_mod } }
