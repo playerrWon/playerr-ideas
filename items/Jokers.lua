@@ -1,15 +1,16 @@
 SMODS.Joker {
-    key = "Lucky7's",
+    key = "payout",
     pos = {x = 0, y = 0},
     rarity = 3,
     atlas = "PLH",
     config = { extra = { X_mult = 1, mult_mod = 0.1 } },
     cost = 6,
     loc_txt = {
-        name = "Lucky 7's",
+        name = "Payout",
         text = {
-            "insert text here"
-        }
+            "{C:attention} 7s {} give {C:Mult}x# Mult {} when scored"
+            "Increases by {C:Mult}x0.1 {} when {C:attention}Lucky Card {} activates
+        } 
     },
     loc_vars = function (self, info_queue, center)
         return { vars = { center.ability.extra.X_mult, center.ability.extra.mult_mod } }
